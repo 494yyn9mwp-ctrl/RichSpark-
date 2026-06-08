@@ -95,10 +95,46 @@ const REFLECTIONS = {
   "trust+Builder": "You've built things. Real things. Things that required you to figure it out as you went. And you did. Every time. Not because you had a perfect plan. Because you had enough trust in yourself to take the next step before you could see the one after it. But now you're requiring the blueprint to be complete before you break ground. Your best work has always started with 'I think I can figure this out.' Not 'I know exactly how this ends.' Your track record says you'll figure it out. Your hesitation is currently arguing with your own evidence.",
   "trust+Guide": "You've mistaken confidence for a requirement. It was never a requirement. It was a side effect. A GPS doesn't know where you're going because it's confident. It knows because it's moving and recalculating. Your answers suggest you've already been the person you're trying to become. You just don't trust that version of yourself anymore. You're waiting for a feeling that used to come after action to somehow arrive before it. That's not how it worked then. It's not how it works now.",
   "trust+Explorer": "You've navigated more uncharted territory than you give yourself credit for. Each time, you figured it out. Not by knowing in advance. By moving and adjusting. That's always been your method. But lately you've been standing at the trailhead waiting for certainty that has never once arrived before you started moving. A compass only points direction when you're in motion. Standing still, it just spins. The clarity you're waiting for lives on the other side of a move you keep not making.",
-  "belief+Catalyst": "You've spent a long time believing your moment was coming. Not in an arrogant way. In a knowing way. Somewhere along the line you made a quiet agreement with life: you'd keep believing in your potential, and life would eventually prove you right. Years passed. The belief stayed. The proof never arrived. Imagine a musician rehearsing for a sold-out concert that never gets scheduled. At some point the problem isn't the music. It's that nobody booked the venue. Potential isn't a destination. It's a responsibility. And responsibilities get heavier every year they're postponed.",
-  "belief+Builder": "You have a felt sense of what you're capable of building. Not as a wish. As a knowing. But you've been waiting for the world to confirm what you already know before you go all in. The builders who change things don't wait for permission. They build. Then they listen. Then they adjust. The external confirmation you've been waiting for comes after the commitment. Not before. That's the part you've been trying to reverse. You already have everything required to start. The only missing piece is your own permission.",
-  "belief+Guide": "You've been one of the most valuable people in a lot of rooms. You just haven't charged for it. Conversations that changed the direction someone was heading. A question asked at the right moment. Real value. Real impact. And then the dinner ended and you went back to wondering why your income doesn't reflect who you are. You don't have a value problem. You have a packaging problem. What you've been giving away informally is already a product. It just doesn't have a front door. That's not generosity. At this point, it's avoidance.",
-  "belief+Explorer": "You keep speaking about your potential like it's a future event. But you've been aware of it for years. Maybe decades. At some point 'I'm meant for more' stops being an insight and starts becoming a debt. An explorer who spends twenty years mapping a continent eventually has to publish the map. Otherwise the expedition becomes a hiding place. How much of your waiting is actually uncertainty… and how much of it is fear that you'll discover you're capable of exactly what you've suspected all along?",
+  "belief+Catalyst": "You've spent a long time waiting for the world to notice something you've been able to see in yourself for years. Not in an ego way. More like an unfinished sentence. A feeling that there was more in you than your current life was demonstrating. You've had flashes of it. Conversations where people suddenly saw things differently because of something you said. Moments where an idea landed and changed the energy of a room. Enough evidence to know you're not imagining it. But somewhere along the way, you started treating your potential like a winning lottery ticket instead of a responsibility. You believed in it. You just stopped acting like it was yours to develop. The strange thing about people like you is that disappointment rarely kills the dream. Waiting does. Years pass. The vision stays alive. The life around it stays mostly unchanged. You don't need a new strategy. You've known the move for a while.",
+  "belief+Builder": "You don't struggle to imagine what could be built. You struggle to understand why it hasn't happened yet. That's an important difference. Your answers don't point to someone who lacks ideas. They point to someone who has spent years carrying a blueprint. You've seen versions of your future clearly enough to describe them. Businesses. Projects. Systems. Offers. New directions. The challenge isn't vision. The challenge is that you've quietly been waiting for confidence to arrive before commitment. But confidence has never worked that way. Every meaningful thing you've ever built probably started with incomplete information. A rough plan. A guess. A willingness to figure it out. Somewhere you forgot that. Now you're asking for guarantees your earlier self never required. The frustrating part is that your evidence and your behavior are telling completely different stories. Your evidence says you're resourceful. Your behavior says you're waiting for permission. Those two things can't both be true forever. Sooner or later one of them wins.",
+  "belief+Guide": "You've probably helped more people than you give yourself credit for. Not because you had the perfect answer. Because people feel different after talking to you. Clearer. Calmer. Less alone. The interesting thing is that you've treated this as something ordinary. Just part of who you are. Just conversations. Just helping. But if you've done something naturally for long enough, it's easy to stop noticing its value. The pattern I see is someone who has spent years creating transformations that disappear the moment the conversation ends. No structure. No container. No offer. No way for the value to accumulate. You've been giving away moments that genuinely mattered to people while wondering why your life hasn't reflected the impact you've had. Eventually that starts to create tension. Because deep down you know the problem isn't whether you're valuable. It's whether you're willing to let that value take up space. The next chapter may have less to do with helping more people. And more to do with finally recognizing what you've already been doing.",
+  "belief+Explorer": "You've been talking about your potential like it's a future event. But you've known about it for a very long time. Maybe years. Maybe decades. That's what makes this interesting. Most people aren't haunted by possibility. You are. Certain ideas keep returning. Certain dreams refuse to die. Certain versions of your future keep reappearing no matter how many times you try to move on to something more practical. That isn't an accident. But there's a trap hidden inside people who are wired like you. Discovery can become a hiding place. Learning feels productive. Research feels productive. Exploring feels productive. And for a while, it is. Until one day you realize you've spent years mapping territory you never actually claimed. The uncomfortable possibility isn't that you're incapable. It's that you're closer than you've been willing to admit. Because once you stop exploring and start building, everything changes. Including the story you've been telling yourself about why you haven't started.",
+};
+
+const RECOGNITION = {
+  "belief+Catalyst": [
+    "You've felt capable of more for years, not months.",
+    "You've had moments where other people saw your potential before they saw your results.",
+    "You've been waiting for external confirmation of something you've privately known for years.",
+  ],
+  "belief+Builder": [
+    "You've imagined versions of your future in remarkable detail.",
+    "You often know the next step long before you take it.",
+    "You've been asking for certainty from projects that actually require commitment first.",
+  ],
+  "belief+Guide": [
+    "People often leave conversations with you feeling better than when they arrived.",
+    "You've been giving away valuable insight so naturally that it stopped feeling valuable.",
+    "You've wondered why your impact and your income seem to live in different universes.",
+  ],
+  "belief+Explorer": [
+    "You've had the feeling that you're meant for something bigger for longer than you're comfortable admitting.",
+    "The gap between what you know and what you've shared with the world is larger than it should be.",
+    "You already know what's stopping you. You've known for a while.",
+  ],
+  // Placeholder for remaining 12 — will be filled in next pass
+  "focus+Catalyst": ["You see more paths than most people know exist.", "Choosing feels like losing — but not choosing is the actual loss.", "You've been waiting for the right one instead of making one right."],
+  "focus+Builder": ["You start strong and finish rarely.", "You know the gap between planning and shipping better than most.", "The workshop is full. The market is still waiting."],
+  "focus+Guide": ["You help everyone a little instead of someone a lot.", "Your attention is your most valuable resource — and it's spread thin.", "The impact you want requires the focus you keep avoiding."],
+  "focus+Explorer": ["Every new direction looks better than the current one.", "You've confused motion for progress more than once.", "The next idea isn't the answer. The current one, finished, is."],
+  "action+Catalyst": ["You know exactly what needs to happen. You're just not doing it yet.", "Your clarity about others hasn't translated to movement in your own life.", "The stands are comfortable. The field is where it actually counts."],
+  "action+Builder": ["Your best work still lives inside your head.", "You've been preparing long enough that preparation became the project.", "The market can't reward what it can't see."],
+  "action+Guide": ["You're running a practice without a business model.", "People pay for what you give away in conversation.", "Permission isn't coming from outside. It was always yours to grant."],
+  "action+Explorer": ["You've built a library no one else can access.", "The value shifted from discovery to transmission a while ago.", "Teaching what you know is the next expedition."],
+  "trust+Catalyst": ["You used to show up bigger. Something changed.", "Certainty became a prerequisite somewhere along the way — it never was before.", "The version of you that made things happen is still available."],
+  "trust+Builder": ["You've figured it out before. Every single time.", "Your track record and your hesitation are telling different stories.", "The blueprint doesn't need to be complete. It never was."],
+  "trust+Guide": ["Confidence was always the side effect, not the requirement.", "You've already been the person you're trying to become.", "The feeling you're waiting for comes after the move, not before."],
+  "trust+Explorer": ["You've navigated uncertainty before. That's literally your skillset.", "The clarity you're waiting for only shows up when you're moving.", "A compass only works in motion. So do you."],
 };
 
 const TYPES = {
@@ -137,7 +173,20 @@ function getType(answers) {
   return Object.entries(scores).sort((a, b) => b[1] - a[1])[0][0];
 }
 
-const SECTION_ORDER = ["Evidence", "Friction", "Mirror", "Future"];
+const RECOGNITION_RESPONSES = {
+  accurate: {
+    label: "Uncomfortably accurate",
+    reply: "That's the most important click you've made in a while. Because now you can't unknow it.",
+  },
+  mostly: {
+    label: "Mostly accurate",
+    reply: "Close enough to matter. The part that landed — that's the part worth paying attention to.",
+  },
+  notreally: {
+    label: "Not really",
+    reply: "Fair. But something brought you this far. Worth asking what that was.",
+  },
+};
 
 export default function App() {
   const [screen, setScreen] = useState("intro");
@@ -155,6 +204,7 @@ export default function App() {
   const [email, setEmail] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [analyzingStep, setAnalyzingStep] = useState(0);
+  const [recognitionResponse, setRecognitionResponse] = useState(null);
 
   const question = QUESTIONS[currentQ];
   const progress = (currentQ / QUESTIONS.length) * 100;
@@ -172,13 +222,13 @@ export default function App() {
   async function fetchAIResult(type, dKey, allAnswers) {
     setLoading(true);
     const diag = DIAGNOSES[dKey];
-    const summary = allAnswers.map((a, i) => `Q${i+1}: ${QUESTIONS[i]?.question} → ${a?.text}`).join("\n");
+    const summary = allAnswers.map((a, i) => `Q${i + 1}: ${QUESTIONS[i]?.question} → ${a?.text}`).join("\n");
     try {
       const response = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-haiku-4-5-20251001",
+          model: "claude-sonnet-4-20250514",
           max_tokens: 1000,
           system: `You are RichSpark — a warm, direct, no-BS guide who helps people have their oh-shit moment about their income potential. Your tone is a campfire conversation: honest, a little funny, deeply human. Never corporate. Never generic. Keep total response under 180 words. Return only plain text, no markdown, no bullet points, no quotes.`,
           messages: [{ role: "user", content: `Type: ${type}. Blockage: ${diag.subheadline}\n\nAnswers:\n${summary}\n\nWrite 3-4 sentences that reference specific answers, name the cost of staying stuck, and end with one sentence that opens a door. Make it feel uncomfortably accurate.` }],
@@ -242,7 +292,8 @@ export default function App() {
   function resetAll() {
     setScreen("intro"); setCurrentQ(0); setAnswers([]); setSelected(null);
     setResult(null); setDiagKey(null); setAiResult(null); setShowObservation(false);
-    setObservationSection(null); setOfferClicked(false); setEmail(""); setEmailSubmitted(false); setLoading(false);
+    setObservationSection(null); setOfferClicked(false); setEmail(""); setEmailSubmitted(false);
+    setLoading(false); setRecognitionResponse(null);
   }
 
   const base = { minHeight: "100vh", background: "#111116", color: "#f0f0f0", fontFamily: "'Georgia','Times New Roman',serif", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px 16px", position: "relative" };
@@ -355,6 +406,8 @@ export default function App() {
     const type = TYPES[result] || TYPES.Catalyst;
     const diag = DIAGNOSES[diagKey] || DIAGNOSES.belief;
     const reflection = aiResult || REFLECTIONS[`${diagKey}+${result}`] || diag.truth;
+    const recognitionKey = `${diagKey}+${result}`;
+    const recognitionItems = RECOGNITION[recognitionKey] || [];
 
     return (
       <div style={base}>
@@ -394,11 +447,48 @@ export default function App() {
             </div>
 
             {/* PERSONAL REFLECTION */}
-            {loading && <div style={{ background: "rgba(0,200,150,0.04)", border: "1px solid rgba(0,200,150,0.1)", borderRadius: "8px", padding: "24px", marginBottom: "24px", textAlign: "center", color: "#666", fontSize: "15px", fontStyle: "italic" }}>Reading your answers...</div>}
+            {loading && (
+              <div style={{ background: "rgba(0,200,150,0.04)", border: "1px solid rgba(0,200,150,0.1)", borderRadius: "8px", padding: "24px", marginBottom: "24px", textAlign: "center", color: "#666", fontSize: "15px", fontStyle: "italic" }}>
+                Reading your answers...
+              </div>
+            )}
             {reflection && !loading && (
               <div style={{ background: "rgba(0,200,150,0.06)", border: "1px solid rgba(0,200,150,0.15)", borderRadius: "12px", padding: "24px", marginBottom: "24px" }}>
                 <p style={{ ...tag }}>Your personal reflection</p>
                 <p style={{ fontSize: "16px", lineHeight: 1.9, color: "#ddd", fontStyle: "italic", marginTop: "12px" }}>{reflection}</p>
+              </div>
+            )}
+
+            {/* RECOGNITION BLOCK */}
+            {recognitionItems.length > 0 && !loading && (
+              <div style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "12px", padding: "28px 24px", marginBottom: "24px" }}>
+                <p style={{ ...tag, color: "#888", marginBottom: "20px" }}>How accurate was this?</p>
+                {recognitionItems.map((item, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: "12px", marginBottom: "14px" }}>
+                    <span style={{ color: GREEN, fontSize: "16px", marginTop: "2px", flexShrink: 0 }}>✓</span>
+                    <p style={{ fontSize: "15px", color: "#ccc", lineHeight: 1.7, margin: 0 }}>{item}</p>
+                  </div>
+                ))}
+
+                {/* RESPONSE BUTTONS */}
+                {!recognitionResponse ? (
+                  <div style={{ marginTop: "28px", display: "flex", flexDirection: "column", gap: "10px" }}>
+                    {Object.entries(RECOGNITION_RESPONSES).map(([key, val]) => (
+                      <button key={key} onClick={() => setRecognitionResponse(key)}
+                        style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "8px", padding: "14px 20px", color: "#ccc", fontSize: "15px", fontFamily: "'Georgia',serif", cursor: "pointer", textAlign: "left", transition: "all 0.2s" }}
+                        onMouseEnter={e => { e.currentTarget.style.borderColor = GREEN; e.currentTarget.style.color = "#fff"; }}
+                        onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; e.currentTarget.style.color = "#ccc"; }}>
+                        {val.label}
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div style={{ marginTop: "24px", borderTop: "1px solid rgba(255,255,255,0.06)", paddingTop: "20px" }}>
+                    <p style={{ fontSize: "16px", color: GREEN, lineHeight: 1.7, fontStyle: "italic" }}>
+                      {RECOGNITION_RESPONSES[recognitionResponse].reply}
+                    </p>
+                  </div>
+                )}
               </div>
             )}
 
@@ -411,7 +501,7 @@ export default function App() {
               <span style={{ color: "#999" }}>This is your path. Let's build it.</span>
             </p>
 
-            {/* EMAIL CAPTURE */}
+            {/* EMAIL CAPTURE — only fully unlocked after recognition response */}
             {emailSubmitted ? (
               <div style={{ background: "rgba(0,200,150,0.08)", border: "1px solid rgba(0,200,150,0.25)", borderRadius: "10px", padding: "28px", marginBottom: "16px", textAlign: "center" }}>
                 <p style={{ fontSize: "20px", fontWeight: 700, color: GREEN, marginBottom: "10px" }}>You're in. 🔥</p>
@@ -429,11 +519,26 @@ export default function App() {
                 </button>
               </div>
             ) : (
-              <button onClick={() => setOfferClicked(true)}
-                style={{ width: "100%", background: GREEN, color: "#111", border: "none", borderRadius: "6px", padding: "20px", fontSize: "16px", fontFamily: "'Georgia',serif", cursor: "pointer", letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: "700", marginBottom: "12px" }}>
-                Show Me The Next Step →
+              <button
+                onClick={() => setOfferClicked(true)}
+                style={{
+                  width: "100%",
+                  background: recognitionResponse === "accurate" ? GREEN : recognitionResponse ? "rgba(0,200,150,0.15)" : "#1e1e1e",
+                  color: recognitionResponse === "accurate" ? "#111" : recognitionResponse ? GREEN : "#555",
+                  border: recognitionResponse ? `1px solid ${GREEN}` : "1px solid #2a2a2a",
+                  borderRadius: "6px", padding: "20px", fontSize: "16px", fontFamily: "'Georgia',serif",
+                  cursor: recognitionResponse ? "pointer" : "default",
+                  letterSpacing: "0.06em", textTransform: "uppercase", fontWeight: "700", marginBottom: "12px",
+                  transition: "all 0.4s"
+                }}>
+                {recognitionResponse === "accurate"
+                  ? "Show Me The Next Step →"
+                  : recognitionResponse
+                    ? "Show Me The Next Step →"
+                    : "Answer above to continue →"}
               </button>
             )}
+
             <button onClick={resetAll}
               style={{ width: "100%", background: "transparent", border: "1px solid #2a2a2a", color: "#666", borderRadius: "6px", padding: "16px", fontSize: "15px", fontFamily: "'Georgia',serif", cursor: "pointer", marginTop: "8px" }}>
               Start over
