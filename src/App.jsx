@@ -122,19 +122,66 @@ const RECOGNITION = {
     "The gap between what you know and what you've shared with the world is larger than it should be.",
     "You already know what's stopping you. You've known for a while.",
   ],
-  // Placeholder for remaining 12 — will be filled in next pass
-  "focus+Catalyst": ["You see more paths than most people know exist.", "Choosing feels like losing — but not choosing is the actual loss.", "You've been waiting for the right one instead of making one right."],
-  "focus+Builder": ["You start strong and finish rarely.", "You know the gap between planning and shipping better than most.", "The workshop is full. The market is still waiting."],
-  "focus+Guide": ["You help everyone a little instead of someone a lot.", "Your attention is your most valuable resource — and it's spread thin.", "The impact you want requires the focus you keep avoiding."],
-  "focus+Explorer": ["Every new direction looks better than the current one.", "You've confused motion for progress more than once.", "The next idea isn't the answer. The current one, finished, is."],
-  "action+Catalyst": ["You know exactly what needs to happen. You're just not doing it yet.", "Your clarity about others hasn't translated to movement in your own life.", "The stands are comfortable. The field is where it actually counts."],
-  "action+Builder": ["Your best work still lives inside your head.", "You've been preparing long enough that preparation became the project.", "The market can't reward what it can't see."],
-  "action+Guide": ["You're running a practice without a business model.", "People pay for what you give away in conversation.", "Permission isn't coming from outside. It was always yours to grant."],
-  "action+Explorer": ["You've built a library no one else can access.", "The value shifted from discovery to transmission a while ago.", "Teaching what you know is the next expedition."],
-  "trust+Catalyst": ["You used to show up bigger. Something changed.", "Certainty became a prerequisite somewhere along the way — it never was before.", "The version of you that made things happen is still available."],
-  "trust+Builder": ["You've figured it out before. Every single time.", "Your track record and your hesitation are telling different stories.", "The blueprint doesn't need to be complete. It never was."],
-  "trust+Guide": ["Confidence was always the side effect, not the requirement.", "You've already been the person you're trying to become.", "The feeling you're waiting for comes after the move, not before."],
-  "trust+Explorer": ["You've navigated uncertainty before. That's literally your skillset.", "The clarity you're waiting for only shows up when you're moving.", "A compass only works in motion. So do you."],
+  "focus+Catalyst": [
+    "You don't need a better opportunity. You need a longer relationship with one.",
+    "Most of your unfinished ideas didn't fail. They were abandoned before reality had a chance to answer.",
+    "The next breakthrough might not come from finding something new. It might come from staying.",
+  ],
+  "focus+Builder": [
+    "You don't need another improvement. You need another brick.",
+    "At some point refinement stops helping and starts hiding.",
+    "The market rewards completed structures, not beautiful blueprints.",
+  ],
+  "focus+Guide": [
+    "Your generosity may be scattering energy that should be concentrated.",
+    "You don't have too little passion. You have too many worthy targets.",
+    "The people you want to help most don't need more of your attention. They need more of your focus.",
+  ],
+  "focus+Explorer": [
+    "The newest opportunity always has an unfair advantage. It hasn't disappointed you yet.",
+    "Commitment doesn't kill possibility. It converts possibility into reality.",
+    "You may be one sustained season away from the thing you've been searching for all along.",
+  ],
+  "action+Catalyst": [
+    "You often know what someone should do long before they do.",
+    "You've had the same next step in front of you for longer than you'd like to admit.",
+    "The issue isn't awareness anymore. It's exposure.",
+  ],
+  "action+Builder": [
+    "You've started more things than most people know about.",
+    "You often feel one project away from momentum.",
+    "Your best feedback is sitting inside work you never shipped.",
+  ],
+  "action+Guide": [
+    "You've had conversations that changed someone's direction.",
+    "People often trust you faster than expected.",
+    "You've spent more time helping others move than helping yourself move.",
+  ],
+  "action+Explorer": [
+    "You've learned things that would genuinely help other people.",
+    "You often underestimate how far you've already traveled.",
+    "Part of you still thinks one more breakthrough will finally make you ready.",
+  ],
+  "trust+Catalyst": [
+    "You don't need more evidence that you can create change. You need to start counting the evidence you've already produced.",
+    "Your hesitation isn't protecting you from failure. It's preventing you from collecting new proof.",
+    "You're not building the version of you you're trying to become. You're reconnecting with them.",
+  ],
+  "trust+Builder": [
+    "Your evidence doesn't support caution nearly as much as it supports self-trust.",
+    "The person arguing against you right now is losing a debate with your own history.",
+    "You've already proven you can figure things out. The only question is why you've stopped believing the proof.",
+  ],
+  "trust+Guide": [
+    "You already know how growth works. You've helped other people through it.",
+    "You're withholding from yourself the same grace you freely give everyone else.",
+    "The guidance you're looking for may already be coming from you. You've just been ignoring the source.",
+  ],
+  "trust+Explorer": [
+    "You already trust uncertainty more than most people. You've just forgotten that it's one of your strengths.",
+    "Your next answer is probably not hidden in another insight. It's hidden in another step.",
+    "The map has never appeared before the journey. Why would this journey be any different?",
+  ],
 };
 
 const TYPES = {
