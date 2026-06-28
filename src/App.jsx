@@ -250,6 +250,33 @@ export default function App() {
   const [offerClicked, setOfferClicked] = useState(false);
   const [email, setEmail] = useState("");
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [emailSending, setEmailSending] = useState(false);
+
+  async function submitEmail() {
+    if (!email) return;
+    setEmailSending(true);
+    const diagnosisType = DIAGNOSES[diagKey]?.label || diagKey;
+    const personalityType = TYPES[result]?.label || result;
+    const reflection = aiResult || REFLECTIONS[`${diagKey}+${result}`] || "";
+    try {
+      await fetch("https://formsubmit.co/RichardWJackson@me.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `🔥 New RichSpark Lead — ${personalityType} / ${diagnosisType}`,
+          email: email,
+          diagnosis: diagnosisType,
+          personality: personalityType,
+          reflection: reflection,
+          _template: "table",
+        }),
+      });
+    } catch (e) {
+      // still show success to user even if network hiccups
+    }
+    setEmailSending(false);
+    setEmailSubmitted(true);
+  }
   const [analyzingStep, setAnalyzingStep] = useState(0);
   const [recognitionResponse, setRecognitionResponse] = useState(null);
 
@@ -560,9 +587,9 @@ export default function App() {
                 <p style={{ fontSize: "15px", color: "#aaa", lineHeight: 1.7, marginBottom: "20px", textAlign: "center" }}>Drop your email and I'll reach out personally to set up a one-on-one conversation about what came up for you.</p>
                 <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)}
                   style={{ width: "100%", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "6px", padding: "16px", fontSize: "16px", color: "#fff", fontFamily: "'Georgia',serif", marginBottom: "12px", boxSizing: "border-box" }} />
-                <button onClick={() => { if (email) setEmailSubmitted(true); }}
-                  style={{ width: "100%", background: GREEN, color: "#111", border: "none", borderRadius: "6px", padding: "18px", fontSize: "16px", fontFamily: "'Georgia',serif", cursor: "pointer", fontWeight: "700", letterSpacing: "0.05em" }}>
-                  Send It →
+                <button onClick={submitEmail}
+                  style={{ width: "100%", background: GREEN, color: "#111", border: "none", borderRadius: "6px", padding: "18px", fontSize: "16px", fontFamily: "'Georgia',serif", cursor: "pointer", fontWeight: "700", letterSpacing: "0.05em", opacity: emailSending ? 0.7 : 1 }}>
+                  {emailSending ? "Sending..." : "Send It →"}
                 </button>
               </div>
             ) : (
