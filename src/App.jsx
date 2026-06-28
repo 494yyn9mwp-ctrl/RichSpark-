@@ -259,7 +259,7 @@ export default function App() {
     const personalityType = TYPES[result]?.label || result;
     const reflection = aiResult || REFLECTIONS[`${diagKey}+${result}`] || "";
     try {
-      await fetch("https://formsubmit.co/RichardWJackson@me.com", {
+      await fetch("https://formsubmit.co/104ce28d3fddccb3efa1d247aaa6f546", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
